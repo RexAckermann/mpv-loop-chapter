@@ -1,6 +1,6 @@
 -- GitHub RePo : https://github.com/RexAckermann/mpv-loop-chapter
 
-function loop(name ,value)
+function loop()
 	chapter_num=mp.get_property("chapter")
 	mp.osd_message(chapter_num, 1)
 	
@@ -41,5 +41,6 @@ function loop(name ,value)
 		
 end
 
-mp.add_forced_key_binding("x", "float" ,loop)
+mp.add_forced_key_binding("x", 'toggle', loop)
 
+mp.add_key_binding(nil, 'toggle', loop)
