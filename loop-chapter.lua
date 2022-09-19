@@ -1,3 +1,5 @@
+-- GitHub RePo : https://github.com/RexAckermann/mpv-loop-chapter
+
 function loop(name ,value)
 	chapter_num=mp.get_property("chapter")
 	mp.osd_message(chapter_num, 1)
